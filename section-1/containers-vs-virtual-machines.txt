@@ -1,0 +1,7 @@
+Contenedores vs. máquinas virtuales:
+
+* Un contenedor es una instancia en ejecución de lo que es una imagen, se crea a partir de una imagen y utiliza todo lo que esté en la imagen para correr. Está corriendo el sistema, usa la misma RAM, CPU, etc. del sistema. Es un proceso más del sistema.
+* Una máquina virtual pesa normalmente más de 10 GB, hay que instalar el virtualizador, descargar la ISO del sistema operativo huésped. El proceso ya no se encuentra en nuestro sistema.
+* En un contenedor no es necesario instalar paquetes que no necesitamos y que normalmente se instala en una máquina virtual.
+* El contenedor simplemente es un proceso más en nuestro sistema y el consumo de memoria es mucho menor que el de la máquina virtual. Además, es más sencillo de volver a crearlo y ejecutarlo.
+* Un contenedor puede consumir 100 MB de RAM, mientras que una máquina virtual puede consumir hasta 3GB.
