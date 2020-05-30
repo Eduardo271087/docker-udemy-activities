@@ -1,0 +1,8 @@
+Docker host:
+
+* Docker Daemon - Server (Servicio corriendo)
+* Rest API (Canal de comunicación entre el cliente y el servidor)
+* Docker CLI - Client (Client command line interface. Se usa cuando escribimo docker en la línea de comandos)
+
+El cliente de Docker permite manejar contenedores, imágenes, volúmenes y redes.
+* Usa el API para conectarse al servidor de Docker. El servidor envía una respuesta con respecto a las solicitudes que se envían a través del cliente.
