@@ -1,0 +1,13 @@
+Dockerfile:
+
+* Archivo de configuración de la imagen.
+* El archivo inicia con FROM (sistema operativo o imagen base).
+* RUN es un conjunto de instrucciones que se pueden ejecutar en la terminal (agregar un usuario, crear un directorio, crear un archivo, etc.).
+* COPY / ADD.
+* ENV.
+* WORKDIR.
+* EXPOSE.
+* LABEL.
+* USER.
+* VOLUME.
+* CMD.
