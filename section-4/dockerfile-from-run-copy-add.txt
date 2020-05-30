@@ -1,0 +1,8 @@
+Dockerfile:
+
+* FROM es la imagen base.
+* RUN son las instrucciones de línea de comando.
+* COPY sirve para copiar archivos desde nuestra máquina hacia la imagen:
+  COPY beryllium /var/www/html
+* ADD permite descargar un archivo de cualquier URL y copiarlo en el directorio de destino.
+  ADD startbootstrap-freelancer-master /var/www/html (para copiar un archivo es más recomendable usar COPY). 
