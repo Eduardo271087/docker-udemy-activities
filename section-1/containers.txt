@@ -1,0 +1,8 @@
+Contenedor:
+
+* Es una capa adicional (Ejecución) que trae una ejecución en tiempo real de las tres capas anteriores. La capa 4 va a ejecutar CentOS, va a tener Apache instalado y va a ejecutar el servicio de Apache instalado.
+* Mientras el CMD esté vivo (la consola esté pegada) el contenedor vive.
+* La capa 4 sí es de lectura y escritura. Estando en la capa 4 se puede acceder a las otras tres capas.
+* Los cambios que se hagan dentro de la capa 4 son temporales y no afectan la imagen (las tres primeras capas).
+* No es bueno ni recomendable incluir configuraciones en la capa 4 porque es temporal, en lo que se termina la ejecución esas configuraciones se pierden.
+* El contenedor incluye las tres capas de la imagen, contiene volúmenes (permite persistir lo que queramos que sobreviva después de la ejecución de un contenedor) y contiene redes para permitir la comunicación de contenedores entre sí.
