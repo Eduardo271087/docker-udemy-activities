@@ -1,0 +1,17 @@
+Imagen:
+
+* Es un paquete que contiene todo lo necesario para que una aplicación se pueda ejecutar.
+* Contiene capas. Una imagen puede contener n cantidad de capas:
+  1.- La primera capa (FROM) se define el sistema operativo a utilizar dentro de la imagen. Cada imagen debe tener lo mínimo para correr un servicio, un mini sistema operativo con no más de 120 MB (p. e. FROM CentOS).
+  2.- La segunda capa (RUN) permite  especificar los paquetes que se van a instalar dentro del sistema operativo (p. e. RUN Apache).
+  3.- La tercera capa (CMD) es la línea que va a levantar el servicio de la segunda capa (p. e. CMD inicia el servicio).
+* Las capas de una imagen son de solo lectura. Se pueden seguir agregando capas o crear otra imagen, pero no se pueden modificar las capas existentes.
+* Las capas se crean mediante un archivo que se llama Dockerfile. En él se definen todas las capas que queramos.
+
+Dockerfile:
+* Es un archivo de texto plano (usualmente el nombre es Dockerfile).
+* Contenido:
+  FROM centos:7
+  RUN yum -y install httpd
+  CMD ["apachectl", "-DFOREGROUND"]
+* La línea anterior inicia el servicio de Apache en primer plano para que la aplicación se mantenga ejecutándose.
