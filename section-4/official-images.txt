@@ -1,0 +1,7 @@
+Imágenes:
+
+* Las imágenes oficiales se almacenan en hub.docker.com.
+* Por ejemplo, para descargar la imagen de mongo: docker pull mongo.
+* Las imágenes se pueden versionar a través de tags. Por defecto, se descarga la última (latest).
+* Para descargar mongo 3.6.5-jessie: docker pull mongo:3.6.5-jessie.
+* Para listar las imágenes existentes: docker images | grep mongo.
