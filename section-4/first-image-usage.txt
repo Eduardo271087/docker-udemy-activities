@@ -1,0 +1,7 @@
+* Para eliminar los contenedores: docker rm -fv <nombre del contenedor>.
+* Para crear el contenedor a partir de la imagen: docker run -d --name apache apache-ubuntu.
+* El contenedor muere inmediatamente porque el Dockerfile no tiene la capa CMD.
+* Para correr apache en primer plano: apachectl -D FOREGROUND.
+* Cada vez que se modifica el archivo Dockerfile es necesario reconstruir la imagen con docker build -t apache-ubuntu:apache-cmd ..
+* docker history -H apache-ubuntu:apache-cmd para ver el historial de la imagen reconstruida.
+* Para indicar el mapeo entre un puerto de la máquina y un puerto del contenedor se utiliza -p: docker run -d --name apache -p 80:80 apache-ubuntu:apache-cmd.
