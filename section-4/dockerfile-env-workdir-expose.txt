@@ -1,0 +1,8 @@
+* ENV sirve para agregar variables de entorno.
+  ENV contenido prueba
+  RUN echo "$contenido" > /var/www/html/prueba.html
+* WORKDIR establece el directorio de trabajo actual.
+  WORKDIR /var/www/html
+* EXPOSE permite exponer cualquier puerto distinto al que se usaría por defecto.
+  EXPOSE 8080
+  
