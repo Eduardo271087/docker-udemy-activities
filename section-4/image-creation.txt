@@ -1,0 +1,12 @@
+Para instalar Apache con PHP:
+
+* Crear Dockerfile: vim Dockerfile:
+  FROM ubuntu:18.04
+  RUN apt update 
+  RUN apt install apache2 -y
+
+* Para convertir el Dockerfile en una imagen real para que se pueda ver con docker images: 
+  docker build --tag apache-ubuntu:primera (--tag indica el nombre de la imagen resultante).
+* Para ver el historial de la imagen: docker history -H apache-ubuntu:latest.
+* El archivo Dockerfile agrega nuevas capas sobre la imagen existente.
+* Para eliminar una imagen existente: docker image rm <nombre de la imagen>. 
