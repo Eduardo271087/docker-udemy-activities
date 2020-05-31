@@ -1,0 +1,8 @@
+* La imagen o el servicio instalado debe ser efímero.
+* Debe haber un solo servicio instalado por contenedor o por imagen (CMD nginx -g 'daemon off;'). No se recomienda tener, por ejemplo, una sola imagen con Apahce y MySQL, lo recomendable es tener esos servicios en dos imágenes.
+* Se recomienda el uso de .dockerignore.
+* Reducir el número de capas en la medida de lo posible.
+* Separar argumentos muy largos en múltiples líneas.
+* Pasar varios argumentos en una sola capa en vez de escribir varias instrucciones en distintas capas.
+* No instalar paquetes innecesarios.
+* Se recomienda el uso de LABEL para agregar metada en la imagen.
