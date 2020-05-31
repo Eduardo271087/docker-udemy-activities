@@ -1,0 +1,4 @@
+* Una imagen huérfana o sin referencia no tiene REPOSITORY o TAG.
+* Aparecen usualmente cuando se crea una nueva última versión sin especificar un TAG.
+* Para evitar la aparición de imágenes huérfanas se deben construir los contenedores indicando el TAG correspondiente, por ejemplo: docker build -t test:v1 ..
+* Para eliminar todas las imágenes huérfanas (dangling): docker images -f dangling=true -q | xargs docker rmi.
