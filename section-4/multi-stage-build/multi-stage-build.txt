@@ -1,0 +1,2 @@
+* Para crear un jar desde una imagen maven y copiarlo hacia una imagen java ahora se puede hacer desde el mismo Dockerfile.
+* El multi stage build permite excluir las dependencias innecesarias y las imágenes pesan menos.
