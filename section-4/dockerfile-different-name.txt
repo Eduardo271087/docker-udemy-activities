@@ -1,0 +1,1 @@
+* Para generar una imagen con un archivo Dockerfile de otro nombre: docker build -t test -f my-dockerfile ..
