@@ -1,0 +1,15 @@
+* CMD es lo que mantiene vivo al contenedor. 
+* CMD tiene que ser un proceso en primer plano que siempre se ejecute.
+* CMD también puede ser un script.
+  run.sh:
+  #!/bin/bash
+
+  echo "Iniciando contenedor..."
+  echo "INICIADO!!" > /var/www/html/ini.html
+  apachectl -D FOREGROUND
+
+  Dockerfile:
+  COPY run.sh /run.sh
+  CMD sh /run.sh
+* Para ver la salida completa se usa docker ps --no-trunc.
+* El archivo .dockerignore se utiliza para ignorar los archivos que no queremos enviar al docker.
