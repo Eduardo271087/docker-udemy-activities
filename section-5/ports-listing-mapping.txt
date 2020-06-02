@@ -1,0 +1,5 @@
+* Requisito para crear un contenedor: una imagen.
+* Para correr un contenedor en el fondo: docker run -d.
+* Todos los campos de docker ps son modificables con docker run.
+* Se puede mapear el puerto de nuestra máquina a un puerto del contenedor: docker run -d -p 9091:8080 jenkins.
+* 
