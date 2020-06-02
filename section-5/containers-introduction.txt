@@ -1,0 +1,7 @@
+Contenedores:
+
+* Son una instancia de ejecución de una imagen.
+* Son temporales. Si queremos que los cambios sean persistentes tenemos que indicarlo en el Dockerfile.
+* Nunca deberíamos hacer cambios en el contenedor porque son temporales.
+* Los contenedores son de lectura y escritura. Las imágenes son de solo lectura.
+* Podemos crear varios contenedores partiendo de una sola imagen.
