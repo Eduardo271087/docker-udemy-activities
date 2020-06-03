@@ -1,0 +1,5 @@
+* Para descargar la imagen de mysql: docker pull mysql.
+* Para crear un contenedor del tag mysql:5.7: docker run -d --name my-db1 -e "MYSQL_ROOT_PASSWORD=12345678" mysql:5.7.
+* Para inspeccionar el contenedor: docker inspect my-db1.
+* Para acceder a mysql: mysql -u root -h 172.18.0.2 -p12345678.
+* Agregar algunas variables de entorno definidas en la página de la imagen de docker de mysql: docker run -d -p 3333:3306 --name my-db2 -e "MYSQL_ROOT_PASSWORD=12345678" -e "MYSQL_DATABASE=docker" -e "MYSQL_USER=docker" -e "MYSQL_PASSWORD=87654321" mysql:5.7. El puerto 3333 de la máquina local se mapea al puerto 3306 del contenedor.
