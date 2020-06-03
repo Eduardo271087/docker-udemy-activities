@@ -1,0 +1,7 @@
+* Para renombrar el contenedor: docker rename practical_fermi jenkins.
+* Para detener el contenedor: docker stop <nombre del contenedor o el id>.
+* Para iniciar el contenedor: docker start <nombre del contenedor o el id>.
+* Para reiniciar el contenedor: docker restart <nombre del contenedor o el id>. Detiene e inicia el contenedor (stop y restart).
+* Para ingresar al contenedor: docker exec -ti jenkins-test bash. -t para terminal, -i para interactivo.
+* Para ingresar al contenedor como usuario root: docker exec -u root -ti jenkins-test bash.
+* Entrar en el contenedor es útil para visualizar algo que se esté ejecutando dentro de ese contenedor. Por ejemplo, para visualizar el archivo /var/jenkins_home/secrets/initialAdminPassword en el sistema de archivos del contenedor.
