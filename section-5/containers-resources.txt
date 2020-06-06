@@ -1,0 +1,6 @@
+* Para listar cuántos recursos consume un contenedor: docker stats mongo.
+* Por defecto, el contenedor puede usar toda la memoria de la máquina anfitriona.
+* Para ver los comandos disponibles para docker run: docker run --help | grep memo.
+* Para limitar los recursos que un contenedor puede consumir: docker run -d -m "500mb" --name mongo2 mongo; docker run -d -m "5gb" --name mongo3 mongo.
+* Para ver cuántos CPU tenemos en la máquina anfitriona: grep "model name" /proc/cpuinfo | wc -l.
+* Para limitar la cantidad de CPU utilizados por el contenedor: docker run -d -m "1gb" --cpuset-cpus 0-1 --name mongo4 mongo.
