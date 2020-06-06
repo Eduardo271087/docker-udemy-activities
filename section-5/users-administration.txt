@@ -1,0 +1,4 @@
+* Para mantener el contenedor ejecutándose al crearlo: docker run -d -ti --name prueba centos:prueba.
+* Para ingresar al contenedor: docker exec -ti prueba bash.
+* Para ingresar al contenedor con un usuario diferente: docker exec -u eduardo -ti prueba2 bash. Al intentar acceder al contenedor prueba con el usuario eduardo va a dar un error porque el usuario no se definió en el Dockerfile (unable to find user eduardo: no matching entries in passwd file).
+* 
