@@ -1,0 +1,2 @@
+* Para crear un contenedor a partir de la imagen oficial de postgres (docker pull postgres): docker run -d --name postgres -e "POSTGRES_PASSWORD=12345678" -e "POSTGRES_USER=docker" -e "POSTGRES_DB=docker-db" -p 5432:5432 postgres.
+* Para conectarse a la base de datos docker-db con el usuario docker: psql -d docker-db -U docker.
