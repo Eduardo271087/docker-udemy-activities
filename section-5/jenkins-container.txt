@@ -1,0 +1,4 @@
+* Para descargar la imagen de Jenkins: docker pull jenkins.
+* Para crear el contenedor: docker run -d -p 7070:8080 --name jenkins jenkins.
+* Para listar el último contenedor que hayamos creado: docker ps -l.
+* Para acceder al contenedor: docker exec -ti jenkins bash.
