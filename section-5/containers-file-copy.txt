@@ -1,0 +1,2 @@
+* Para copiar un archivo hacia dentro del contenedor: docker cp index.html apache:/tmp.
+* Para copiar un archivo hacia fuera del contenedor: docker cp apache:/var/log/dpkg.log ..
