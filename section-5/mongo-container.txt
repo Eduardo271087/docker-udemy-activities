@@ -1,0 +1,3 @@
+* Para ver cuánta RAM consume un contenedor: docker stats my-mongo2.
+* Para ver los logs del contenedor: docker logs -f my-mongo2.
+* La primera opción siempre debe ser usar las imágenes oficiales porque normalmente están optimizadas, siguen buenas prácticas, etc.
