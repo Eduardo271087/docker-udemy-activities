@@ -1,0 +1,2 @@
+* Para sobreescribir el CMD de una imagen: docker run -d -p 8080:8080 centos python -m SimpleHTTPServer 8080. EL nuevo CMD en el ejemplo es python -m SimpleHTTPServer 8080.
+* Escribir el comando después del nombre de la imagen al hacer docker run es lo único necesario para sobreescribir el CMD de la imagen.
