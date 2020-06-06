@@ -1,0 +1,4 @@
+* docker commit permite transformar un contenedor en una imagen.
+* No es muy buena práctica usar docker commit, lo mejor sería utilizar volúmenes.
+* Para crear una imagen a partir de un contenedor: docker commit centos centos-resultante.
+* Al hacer docker commit, si hay algo en una ruta etiquetada como VOLUME en el Dockerfile (VOLUME /opt/volumen), no se guarda (/opt/volumebn/file1).
