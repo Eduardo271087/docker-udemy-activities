@@ -1,0 +1,8 @@
+* Para obtener el directorio root actual: docker info | grep -i root.
+* Para cambiar esta ruta hay que ingresar al archivo /lib/systemd/system/docker.service y agregar el elemento --data-root /opt (nueva ruta del document root de docker en la máquina anfitriona) al final de la línea que empieza con ExecStart.
+* Para recargar el cambio en systemd: systemctl daemon-reload && systemctl restart docker.
+* Para copiar la carpeta docker con la información de docker del directorio anterior al nuevo document root: cp -r /var/lib/docker /opt.
+* Se actualiza la ruta en /lib/systemd/system/docker.service a /opt/docker.
+* Para notificar el cambio en el archivo de systemd: systemctl daemon-reload.
+* Para detener y reiniciar el demonio de docker: systemctl stop docker && systemctl restart docker.
+* Para validar el cambio del directorio raíz: docker info | grep -i root.
