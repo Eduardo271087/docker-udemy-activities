@@ -1,0 +1,7 @@
+* Una volumen nombrado es la unión entre un volumen host y un volumen anónimo.
+* Para crear un volumen nombrado: docker volume create mysql-data.
+* Al crear un volumen nombrado, se crea un directorio /var/lib/docker/volumes correspondiente al volumen nombrado creado.
+* Para listar los volúmenes: docker volume ls.
+* Para eliminarlo: docker volume rm mysql-data.
+* Se puede mapear el volumen de la máquina anfitriona con el directorio del contenedor, en lugar de mapear un directorio de la máquina anfitriona: docker run -d --name test -v my-vol:/var/lib/mysql.
+* Si se elimina el contenedor con la opción -v, el volumen nombrado no se elimina, persiste.
