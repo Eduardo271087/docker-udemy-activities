@@ -1,0 +1,1 @@
+* Para ejecutar un comando dentro de un contenedor sin acceder a él: docker exec jenkins bash -c "cat /var/jenkins_home/secerts/initialAdminPassword".
