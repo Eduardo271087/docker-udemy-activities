@@ -1,0 +1,3 @@
+* Para listar los volúmenes huérfanos (dangling): docker volume ls -f dangling=true
+* Para eliminar volúmenes huérfanos (dangling): docker volume ls -f dangling=true -q | xargs docker volume rm.
+* Siempre lo recomendable es utilizar volúmenes host o nombrados.
