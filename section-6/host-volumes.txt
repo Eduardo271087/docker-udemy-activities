@@ -1,0 +1,2 @@
+* Para indicar un volumen de tipo host se usa una instrucción como la siguiente: docker run -d --name db -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=12345678" -v /opt/mysql:/var/lib/mysql mysql:5.7. El directorio /opt/mysql de la máquina anfitriona se va a corresponder con el directorio /var/lib/mysql del contenedor.
+* Con los volúmenes de tipo host la data persiste en el directorio de la máquina anfitriona aunque se elimine el contenedor.
