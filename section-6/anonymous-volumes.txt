@@ -1,0 +1,3 @@
+* Los volúmenes tipo anonymous crean carpetas aleatorias en la máquina anfitriona: docker run -d --name db -p 3307:3306 -e "MYSQL_ROOT_PASSWORD=12345678" -v /var/lib/mysql mysql:5.7.
+* En /var/lib/docker/volumes es complicado encontrar el volumen creado por docker.
+* Es de difícil acceso.
