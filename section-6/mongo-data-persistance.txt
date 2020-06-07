@@ -1,0 +1,6 @@
+* Para crear un contenedor con un volumen host:  docker run -d -p 27017:27017 -v /opt/mongo:/data/db mongo.
+* Para insertar una fila de una tabla en una base de datos mongo:
+  1.- use mydb.
+  2.- db.movie.insert({"name":"tutorials point"}).
+  3.- show dbs.
+* Al eliminar el contenedor, el volumen host creado aun existe en /opt/mongo y se puede crear un nuevo contenedor usando ese mismo volumen dejado por el contenedor anterior: docker run -d -p 27017:27017 --name mongo -v /opt/mongo:/data/db mongo.
