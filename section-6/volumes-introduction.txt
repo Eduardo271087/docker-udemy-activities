@@ -1,0 +1,6 @@
+* Los volúmenes son herramientas que nos permiten persistir datos del contenedor en nuestra máquina anfitriona.
+* Los volúmenes permiten almacenar data persistente del contenedor.
+* Hay tres tipos de volúmenes:
+  1.- Host: se almacenan en nuestro docker host. Viven en una carpeta dentro de nuestro file system que nosotros definimos.
+  2.- Anonymous: la información persiste en carpetas aleatorias generadas por docker.
+  3.- Named Volumes: no son carpetas nuestras, sino administradas por docker. Son como los volúmenes anonymous, pero con nombre y son manejadas netamente por docker.
