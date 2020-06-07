@@ -1,0 +1,8 @@
+* Dockerfile para crear un volumen anónimo:
+  FROM centos
+
+  VOLUME /opt/
+* docker volume ls permite listar los volúmenes anónimos.
+* Los archivos del volumen anónimo están en /var/lib/docker/volumes/<nombre del volumen>/_data.
+* El tag VOLUME dentro del Dockerfile sirve para crear un volumen anónimo en la ejecución de un contenedor.
+* Si el contenedor se elimina con la opción -v, el volumen anónimo también se elimina de /var/lib/docker/volumes: docker rm -fv test.
