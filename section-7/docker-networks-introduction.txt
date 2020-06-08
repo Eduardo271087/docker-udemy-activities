@@ -1,0 +1,8 @@
+Redes en docker.
+* Crear y eliminar redes.
+* Tipos de redes:
+  1.- Bridge.
+  2.- Host.
+  3.- None.
+  4.- Overlay.
+* Conectar contenedores.
