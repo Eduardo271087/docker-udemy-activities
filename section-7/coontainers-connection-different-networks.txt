@@ -1,0 +1,2 @@
+* Para conectar un contenedor a una red existente: docker network connect docker-test-network cont3.
+* Para desconectar un contenedor: docker network disconnect docker-test-network cont3.
