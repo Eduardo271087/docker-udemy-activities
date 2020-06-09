@@ -1,0 +1,4 @@
+* Para crear una red en docker usando el driver bridge: docker network create test-network.
+* Para listar las redes: docker network ls.
+* Para definir detalles de la red: docker network create -d bridge --subnet 172.124.10.0/24 --gateway 172.124.10.1 docker-test-network.
+* Para inspeccionar la red: docker network inspect docker-test-network.
