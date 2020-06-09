@@ -1,0 +1,27 @@
+* En docker compose, las variables de entorno se pueden definir en el archivo docker-compose.yml:
+version: '3'
+services:
+  db:
+    image: nginx
+    container_name: mysql
+    ports:
+      - "3307:3306"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=12345678"
+
+* Las variables de entorno también se pueden definir en un archivo que se cargue a través del docker-compose.yml:
+common.env:
+
+MYSQL_ROOT_PASSWORD=12345678
+hola=hola2
+
+docker-compose.yml:
+
+version: '3'
+services:
+  db:
+    image: nginx
+    container_name: mysql
+    ports:
+      - "3307:3306"
+    env_file: common.env
