@@ -1,0 +1,2 @@
+* La red none viene con docker por defecto.
+* Los contenedores que creemos en la red none no tienen conexión.
