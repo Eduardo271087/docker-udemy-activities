@@ -1,0 +1,31 @@
+* Para inspeccionar la red: docker network inspect docker-test-network.
+[
+    {
+        "Name": "docker-test-network",
+        "Id": "a8dcf8abac2b358d37233e09e8d11261afb983957750af3a616374eb1365f83f",
+        "Created": "2020-06-08T19:22:49.865556337-05:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.124.10.0/24",
+                    "Gateway": "172.124.10.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {},
+        "Labels": {}
+    }
+]
