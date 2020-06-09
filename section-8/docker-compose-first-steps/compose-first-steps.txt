@@ -1,0 +1,7 @@
+* Crear docker-compose.yml.
+* volumes y networks son opcionales.
+* Documentación de docker compose: docker docs compose.
+* Para crear los contenedores especificados en docker-compose.yml: docker-compose up -d.
+* Docker crea la red por defecto docker-compose_default.
+* Para detener el contenedor: docker-compose down. Esto detiene el contenedor, lo elimina y elimina la red por defecto creada por docker docker-compose_default.
+
