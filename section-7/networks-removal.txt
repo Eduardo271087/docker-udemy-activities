@@ -1,0 +1,3 @@
+* Para eliminar una red: docker network rm docker-test-network.
+* Si existen contenedores conectados a la red que se quiere eliminar, se obtiene el error: Error response from daemon: error while removing network: network docker-test-network id a8dcf8abac2b358d37233e09e8d11261afb983957750af3a616374eb1365f83f has active endpoints.
+* Es necesario eliminar los contenedores conectados.
