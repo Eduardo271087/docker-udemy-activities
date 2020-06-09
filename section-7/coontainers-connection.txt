@@ -1,0 +1,4 @@
+* docker run -d --network docker-test-network --name cont1 -ti centos.
+* docker run -d --network docker-test-network --name cont2 -ti centos.
+* En la red por defecto, no se puede hacer ping a los contenedores por nombre. En las redes definidas por el usuario sí: docker exec cont2 bash -c "ping cont1".
+* Es más fácil recordar un nombre que una IP.
