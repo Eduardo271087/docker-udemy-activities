@@ -1,0 +1,4 @@
+* Al crear un volumen mediante docker compose, se puede verificar la creación del volumen en la consola al hacer docker-compose up -d: Creating volume "docker-compose_vol2" with default driver.
+* También se puede validar la existencia del volumen en el document root de docker: ls -l /var/lib/docker/volumes.
+* Para crear un volumen de host en docker compose: docker-compose-host-volume.yml.
+* Para crear un volumen nombrado en docker compose: docker-compose-named-volume.yml.
