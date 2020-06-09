@@ -1,0 +1,1 @@
+* Para conectar el contenedor a la red del host: docker run --network host -dti --name tst2 centos.
