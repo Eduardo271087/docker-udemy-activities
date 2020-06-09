@@ -1,0 +1,2 @@
+* Para inspeccionar un contenedor: docker inspect 6aa2ce0fa0c370a3799b55c52a65af63c9900edb47dc0c9fb827f6d277f5f152.
+* Para conectar un contenedor a una red distinta a la red por defecto: docker run --network docker-test-network -dti --name test3 centos.
