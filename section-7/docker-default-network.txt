@@ -1,0 +1,6 @@
+* docker0 es la red por defecto con propia IP.
+* Con docker inspect <nombre del contenedor> se puede obtener la IP del contenedor.
+* Para obtener la información de la red: docker network inspect bridge.
+* Es posible hacer ping de un docker a otro: docker exec hungry_cartwright bash -c "ping 172.18.0.2".
+* Los contenedores se pueden conectar por medio de las IP.
+* La red por defecto se llama bridge.
