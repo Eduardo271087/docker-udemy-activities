@@ -1,0 +1,3 @@
+* Para asignar una IP a un contenedor: docker run --network my-net --ip 172.128.10.50 -dti --name nginx2 centos.
+* Para que funcione la asignación de IP a contenedores es necesario crear la red indicando subnet y gateway: docker network create --subnet 172.128.10.0/24 --gateway 172.128.10.1 -d bridge my-net.
+* Para inspeccionar un contenedor: docker inspect nginx2.
