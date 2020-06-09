@@ -1,0 +1,1 @@
+* Para ejecutar docker-compose con un archivo de nombre diferente al nombre por defecto (docker-compose.yml): docker-compose -f docker-compose-cmd.yml up -d.
