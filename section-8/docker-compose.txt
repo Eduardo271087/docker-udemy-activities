@@ -1,0 +1,8 @@
+* Docker compose permite construir aplicaciones multicontenedor.
+* Una aplicación multicontenedor puede ser un sitio en wordpress que necesita, por ejemplo, un web server y una base de datos. Estos contenedores se pueden conectar mediante las redes de docker.
+
+Aplicaciones multicontenedor:
+* Contenedores.
+* Imágenes.
+* Volúmenes.
+* Redes.
