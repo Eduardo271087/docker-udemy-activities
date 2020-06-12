@@ -1,0 +1,1 @@
+* Para indicar un archivo distinto al archivo docker-compose.yml por defecto: docker-compose -f docker-compose-test.yml up -d.
