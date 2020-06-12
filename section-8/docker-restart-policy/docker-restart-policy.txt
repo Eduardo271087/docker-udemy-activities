@@ -1,0 +1,7 @@
+* Políticas según las cuales un contenedor debe ser reiniciado.
+* El comando `watch -d docker ps` permite ejecutar el comando docker ps múltiples veces.
+* Posibles valores para la etiqueta restart de docker-compose.yml:
+  1.- always. Se reinicia siempre.
+  2.- unless-stopped. Se reinicia a menos que sea detenido intencionalmente. 
+  3.- on-failure. Se reinicia cuando hay algún error en la ejecución del CMD.
+  4.- no. No se reinicia nunca.
