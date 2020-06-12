@@ -1,0 +1,2 @@
+* docker-compose enter para ver las opciones.
+* Las más útiles son build, start, stop, up y down.
