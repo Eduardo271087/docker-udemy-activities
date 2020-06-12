@@ -1,0 +1,1 @@
+* Los volúmenes se utilizan para persistir la data de los contenedores creados con docker-compose.
