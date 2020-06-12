@@ -1,0 +1,1 @@
+* Para evitar nombrar la red de docker-compose con base en el nombre del directorio actual: docker-compose -p webtest up -d.
