@@ -1,0 +1,1 @@
+* Guacamole es un servicio en HTML5 que nos permite conectarnos a escritorios remotos desde nuestro navegador.
