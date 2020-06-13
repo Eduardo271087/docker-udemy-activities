@@ -1,0 +1,2 @@
+* Un registry es un servicio en el que podemos subir y bajar imágenes.
+* Para hacer un registry local: docker run -d -p 5000:5000 --name registry -v $PWD/data:/var/lib/registry registry:2.
