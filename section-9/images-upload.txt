@@ -1,0 +1,3 @@
+* Para subir nuestros registry en la máquina local hay que taguearla: docker tag hello-world:latest localhost:5000/hello-world.
+* Para subir la imagen al registry: docker push localhost:5000/hello-world.
+* Para descargar la imagen desde el registry: docker pull localhost:5000/hello-world. 
