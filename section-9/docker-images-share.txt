@@ -1,0 +1,9 @@
+* Para poder hacer push a través de una IP en la misma red:
+  1.- Se agrega --insecure-registry 192.168.0.8:5000 a la línea que empieza con ExecStart en el archivo /lib/systemd/system/docker.service.
+  2.- sudo systemctl daemon-reload.
+  3.- docker stop registry.
+  4.- sudo systemctl restart docker.
+  5.- docker start registry.
+  6.- docker push 192.168.0.8:5000/hello-world.
+  7.- docker pull 192.168.0.8:5000/hello-world.
+* Por defecto, docker espera que los registry tengan autenticación.
